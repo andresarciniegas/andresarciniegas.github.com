@@ -1,0 +1,164 @@
+.container{
+	background: #642B73;
+	background: -webkit-linear-gradient(to right, #C6426E, #642B73);
+	background: linear-gradient(to right, #C6426E, #642B73);
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.content{
+	max-width: 960px;
+	height: 80vh;
+	width: 100%;
+	background-color: white;
+	/* box-shadow: diferenciaHorizontak diferenciaVertical desenfoque amplitud color */
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	border-radius: 4px;
+	position: relative;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.content{
+	padding: 1em;
+}
+td{
+	display: block;
+	width: 100%;
+}
+td:nth-of-type(1) {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #642B73;
+}
+th{
+	display: none;
+}
+
+.actions{
+	position: absolute;
+	top: 1em;
+	right: 1em;
+}
+
+.close{
+	height: 40px;
+	width: 40px;
+	color: white;
+	border-radius: 50%;
+	background-color: #642873;
+	display: inline-block;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	font-weight: 300;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+html{
+	font-family: 'Open Sans', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: #d500f9;
+}
+
+a:hover{
+	opacity: 0.8;
+}
+
+.title{
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.paragraph{
+	line-height: 1.8em;
+	font-weight: 300;
+}
+
+.table{
+	width: 100%;
+	border-spacing: 0;
+}
+
+.table td, .table th{
+	padding: 1em;
+	text-align: left;
+}
+
+.table tr:nth-child(even){
+	background-color: #f3e5f5;
+}
+
+.fa-star{
+	color: #ffc400;
+}
+
+.title-item{
+	/*
+	border-bottom-style: solid;
+	border-width: 2px;
+	border-color: #C6426E
+	*/
+	border-bottom: solid 2px #C6426E;
+	padding-bottom: 1em;
+	font-size: 2em;
+}
+
+.position{
+	background-color: #C6426E;
+	color: white;
+	padding: 10px;
+	/* padding: 1em 2em 3em 4em; */
+	/*
+	border-top-left-radius: 2em;
+	border-top-right-radius: 2em;
+	border-bottom-left-radius: 2em;
+	border-bottom-right-radius: 2em;
+	*/
+	/* border-radius: 2em 2em 2em 2em; */
+	border-radius: 4px;
+	margin-right: 0.5em;
+}
+
+.address{
+	font-weight: bold;
+	color: #642B73;
+	font-size: 1.2em;
+	margin-top: 2em;
+	display: inline-block;
+}
+
+.main-image{
+	float: left;
+	margin-right: 1em;
+	height: 250px;
+}
+
+@media(min-height: 550px){
+	.content{
+		height: 500px;
+	}
+}
+
+@media(min-width:900px){
+	th{
+		display: table-cell;
+	}
+	td{
+		display: table-cell;
+		width: auto;
+	}
+	td:nth-of-type(1) {
+		font-size: 1em;
+	}
+	.content{
+		padding: 1.8em;
+	}
+
+}
